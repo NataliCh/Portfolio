@@ -1,2 +1,2 @@
 # Portfolio
-https://natalich.github.io/portfolio/
+https://natalich.github.io/portfolio-natali/
