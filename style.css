@@ -1,0 +1,600 @@
+@font-face {
+    font-family: 'vtf_victorianna_thin-webfont';
+    src: url(fonts/vtf_victorianna_thin-webfont.ttf);
+}
+@font-face {
+  font-family: 'Raleway-VariableFont_wght';
+  src: url('fonts/Raleway-VariableFont_wght.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.container{
+    width: 980px;
+    height: 750px;
+    margin: auto;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3em;
+    padding-bottom: 4em;
+}
+nav{
+    width: 100%;
+    padding-left: 5.5em;
+    padding-right: 2em;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-between;
+}
+#ojo{
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    top: 18em;
+    right: 1.5em;
+    position: absolute;
+    display: flex;
+    z-index: -1;
+}
+#ojo img{
+    width: 380px;
+    height: 380px;
+}
+body{
+    background-color: #000A19;
+}
+h1{
+    text-align: center;
+    font-family: 'vtf_victorianna_thin-webfont';
+    font-size: 12em;
+}
+h2{
+    font-family: 'vtf_victorianna_thin-webfont';
+    font-size: 8em;
+    justify-content: right;
+}
+h3{
+    font-family: 'vtf_victorianna_thin-webfont';
+    font-size: 8em;
+    justify-content: left;
+}
+h1, h2{
+    color: #00CC8F;
+}
+h3{
+    color: white;
+}
+h1, h2{
+    display: flex;
+    flex-direction: row;
+}
+main{
+    min-width: auto;
+    height: 3650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10em;
+}
+main p{
+    color: #00CC8F;
+    width: 100%;
+    font-family: 'vtf_victorianna_thin-webfont';
+    font-size: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.proyectos{
+    padding-bottom: 10em;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.proyectos img{
+  height: 50px;
+  width: 80px;
+}
+.todo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.simbolos{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 5em;
+    top: 5em;
+}
+.i_middle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 180px;
+  height: 180px;
+  background-image: url('img/Vector_2.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.i_middle:hover {
+  background-image: url('img/Vector_2_face.png');
+}
+.i_left{
+  position: absolute;
+  left: -15em;
+  width: 180px;
+  height: 180px;
+}
+.i_right{
+  position: absolute;
+  right: -15em;
+  width: 180px;
+  height: 180px;
+}
+.trabajos{
+    display: flex;
+    flex-direction: column;
+}
+.containersymbols{
+  width: auto;
+  height: auto;
+}
+/* modal image 1 */
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#myImg {
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    top: 110em;
+    right: 34em;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #000A19
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    color: white;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+/* modal image 2 */
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#myImg2 {
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    top: 135em;
+    right: 34em;
+  }
+  
+  #myImg2:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #000A19
+  }
+  
+  /* Modal Content (image) */
+  .modal-content2 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption2 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    color: white;
+  }
+  
+  /* Add Animation */
+  .modal-content2, #caption2 {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close2 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content2 {
+      width: 100%;
+    }
+  }
+  /* modal image 3 */
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#myImg3 {
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    top: 160em;
+    right: 34em;
+  }
+  
+  #myImg3:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal3 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #000A19
+  }
+  
+  /* Modal Content (image) */
+  .modal-content3 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption3 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    color: white;
+  }
+  
+  /* Add Animation */
+  .modal-content3, #caption3 {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close3 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close3:hover,
+  .close3:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content3 {
+      width: 100%;
+    }
+  }
+/* modal image 4 */
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#myImg4 {
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    top: 185em;
+    right: 34em;
+  }
+  
+  #myImg4:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal4 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #000A19
+  }
+  
+  /* Modal Content (image) */
+  .modal-content4 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption4 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    color: white;
+  }
+  
+  /* Add Animation */
+  .modal-content4, #caption4 {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close4 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close4:hover,
+  .close4:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content4 {
+      width: 100%;
+    }
+  }
+
+.nombre{
+  text-align: center;
+  justify-content: center;
+  font-family: 'vtf_victorianna_thin-webfont';
+  font-size: 10px;
+  position: absolute;
+  top: 350em;
+}
+.flores{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 4em;
+  position: absolute;
+  top: 213em;
+}
+.flor1{
+  height: 40px;
+  width: 25px;
+}
+.flor2{
+  height: 60px;
+  width: 40px;
+  position: relative;
+  right: -0.5em;
+}
+.flor3{
+  height: 70px;
+  width: 60px;
+}
+.aboutme{
+  position: absolute;
+  top: 238em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutme img{
+  height: 50px;
+  width: 80px;
+}
+.aboutme p{
+  color: white;
+}
+.aboutmetext p{
+  font-family: 'Raleway-VariableFont_wght';
+  font-size: 1.2em;
+  position: absolute;
+  top: 210em;
+  right: 0em;
+  color: white;
+  text-align: center
+}
+footer{
+  width: auto;
+  height: 300px;
+}
+.gradientfooter{
+  width: auto;
+  height: 500px;
+  background-image: linear-gradient(#000A19,#00CC8F);
+}
+.iconmail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #00CC8F;
+  height: 200px;
+  gap: 1.5em;
+}
+.LinkedIn{
+  height: 40px;
+  width: 40px;
+}
+.iconmail p a{
+  color: white;
+  font-family: 'Raleway-VariableFont_wght';
+}
